@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Satisfy&display=swap');
+
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.border-gray {
+    border: 10px solid dimgray;
+    background-color: white;
+    border-radius: 25px;
+    padding: 50px 50px 50px 50px
+}
+
+.text-green {
+    color: #113300
+}
+
+.heading {
+    font-family: 'Satisfy', cursive;
+}
