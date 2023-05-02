@@ -15,16 +15,16 @@
     <div class="w-75 mx-auto border-gray">
         <h1 class="text-center text-green heading">Welcome to Sea Cove Motel! Please log in.</h1>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username">
+            <input type="text" class="form-control" placeholder="Username" id="username-r">
         </div>
           
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Email">
+            <input type="text" class="form-control" placeholder="Email" id="email">
         </div>
           
         <div class="mb-3">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Password" id="password" aria-describedby="basic-addon4">
+                <input type="text" class="form-control" placeholder="Password" id="password-r" aria-describedby="basic-addon4">
             </div>
             <div class="form-text" id="basic-addon4">Password should be at least six (6) characters long and contain at least one (1) capital letter.</div>
         </div>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="mb-3">
-            <p>Already have an account? <button class="btn-info">Log In</button></p>
+            <p>Already have an account? <button class="btn-info" onclick="updatePassword(); updateUsername(); updateEmail();">Log In</button></p>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
