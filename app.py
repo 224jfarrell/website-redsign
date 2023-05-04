@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 from xml.etree import ElementTree
-from flask_jsglue import JSGlue
 
 # force download jsglue file and change jinja2 to markupsafe on line 2
 
 app = Flask(__name__)
-jsglue = JSGlue(app)
 
 my_username = 'placeholder'
 my_password = 'placeholder'
