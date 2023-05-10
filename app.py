@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, session, redirect, url_for
-from xml.etree import ElementTree
-
-# force download jsglue file and change jinja2 to markupsafe on line 2
 
 app = Flask(__name__)
 
@@ -21,10 +18,6 @@ def rooms():
 @app.route('/attractions')
 def attractions():
     return render_template("attractions.html")
-
-@app.route('/register')
-def register():
-    return render_template("register.html")
 
 @app.route('/about')
 def about():

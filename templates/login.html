@@ -15,17 +15,17 @@
     <div class="w-75 mx-auto border-gray">
         <h1 class="text-center text-green heading">Welcome back to Sea Cove Motel! Please log in.</h1>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="username" id="input-username">
         </div>
           
         <div class="mb-3">
             <div class="input-group">
-                <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password">
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" name="password" id="input-pw">
             </div>
         </div>
 
         <div class="mb-3">
-            <input type="submit" class="form-control btn-success" placeholder="Log In">
+            <button class="form-control btn-success">Log In</button>
         </div>
         
         {% if failed_login %}

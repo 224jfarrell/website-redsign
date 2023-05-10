@@ -1,7 +1,7 @@
 function clearPassword(){
-    document.getElementById('password-r').value = '';
+    document.getElementById('input-pw').value = '';
 }
 
 function clearUsername(){
-    document.getElementById('username-r').value = '';
+    document.getElementById('input-username').value = '';
 }

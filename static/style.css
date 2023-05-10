@@ -22,3 +22,7 @@ body {
 .heading {
     font-family: 'Satisfy', cursive;
 }
+
+.logo {
+    width: 25%;
+}
