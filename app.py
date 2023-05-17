@@ -19,10 +19,6 @@ def rooms():
 def attractions():
     return render_template("attractions.html")
 
-@app.route('/about')
-def about():
-    return render_template("about.html")
-
 @app.route('/login', methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
