@@ -26,3 +26,7 @@ body {
 .logo {
     width: 25%;
 }
+
+.carousel-padding{
+    padding: 132px;
+}
