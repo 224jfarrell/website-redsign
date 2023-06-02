@@ -74,3 +74,23 @@ body {
     width: 100%;
     border-radius: 25px;
 }
+
+.book {
+    background-color: #84a8c8;
+    box-shadow: 5px 5px 0 #91afca;
+    color: #000000;
+    text-decoration: none;
+}
+
+.book:hover {
+    color: #ffffff;
+    background-color: #3a71a1;
+    box-shadow: 5px 5px 0 #558bb9;
+}
+
+.content.inner.alt {
+    border: 2px solid #e4f5ff;
+    border-radius: 25px;
+    background-color: #a8caff;
+    padding: 20px 20px 20px 20px;
+}
