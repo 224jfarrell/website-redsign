@@ -24,9 +24,6 @@
             <li class="nav-item">
               <a class="nav-link" href="attractions.html">Attractions</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="booking.html">Booking</a>
-            </li>
         </div>
       </nav>
         <div class="header w-100">
@@ -35,17 +32,34 @@
         <div class="content w-100">
           <div class="content inner alt w-75 mx-auto">
             <div class="content inner alt w-75 mx-auto">
+              <h1 class="text-center">Price</h1>
               <form>
-                <input type="radio" name="room" value="1" onclick="getPrice()">
+                <input type="radio" name="room" value="1">
                 <label for="1">Single Bed Room</label>
                 <br>
-                <input type="radio" name="room" value="2" onclick="getPrice()">
+                <input type="radio" name="room" value="2">
                 <label for="2">Double Bed Room</label>
                 <br>
-                <input type="number" name="num">
-                <label for="days">How many nights do you plan on staying?</label>
+                <input type="number" name="num" id="num">
+                <label for="num">How many nights do you plan on staying?</label>
+                <p id="subtotal" style="margin: 10px 0 0 0"></p>
+                <p id="tax" style="margin: 0"></p>
+                <p id="total" style="margin: 0"></p>
+                <input type="button" value="Confirm" onclick="getPrice()" style="margin-top:10px;">
               </form>
-              <p id="price"></p>
+            </div>
+            <div class="content inner alt w-75 mx-auto">
+              <h1 class="text-center">Payment</h1>
+              <form>
+                <input type="radio" name="card" value="16" checked onclick="creditCard()">
+                <label for="16">Visa</label>
+                <br>
+                <input type="radio" name="card" value="15" onclick="creditCard()">
+                <label for="15">American Express</label>
+                <br>
+                <input type="text" pattern="\d*" name="payment" id="visa" maxlength="16">
+                <input type="text" pattern="\d*" name="payment" id="amex" maxlength="15" disabled>
+              </form>
             </div>
           </div>
         </div>
