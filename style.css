@@ -94,3 +94,12 @@ body {
     background-color: #a8caff;
     padding: 20px 20px 20px 20px;
 }
+
+#disappear {
+    transition: opacity 1s;
+}
+
+#appear {
+    transition: opacity 1s;
+    opacity: 0;
+}

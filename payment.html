@@ -30,18 +30,22 @@
             <img src="img/logo.png" alt="The Sea Cove Motel" class="logo mx-auto d-block">
         </div>
         <div class="content w-100">
-          <div class="content inner alt w-75 mx-auto">
-            <div class="content inner alt w-75 mx-auto">
+          <div class="content inner alt w-75 mx-auto" id="disappear">
+            <div class="content inner alt w-75 mx-auto" style="margin-top: 40px;">
               <h1 class="text-center">Price</h1>
               <form>
                 <input type="radio" name="room" value="1">
-                <label for="1">Single Bed Room</label>
+                <label for="1">Single Bed Room (Max. guests: 2)</label>
                 <br>
                 <input type="radio" name="room" value="2">
-                <label for="2">Double Bed Room</label>
+                <label for="2">Double Bed Room (Max. guests: 4)</label>
                 <br>
-                <input type="number" name="num" id="num">
-                <label for="num">How many nights do you plan on staying?</label>
+                <input type="number" name="num" id="num" placeholder="How many nights do you plan on staying?" style="width: 35%">
+                <br>
+                <input type="text" maxlength="1" name="num" id="ppl" placeholder="How many total people will be in the room?" style="width: 35%; margin-top: 5px;">
+                <br>
+                <input type="date" name="date" id="date" style="margin-top: 5px;">
+                <label for="date">When do you plan on arriving?</label>
                 <p id="subtotal" style="margin: 10px 0 0 0"></p>
                 <p id="tax" style="margin: 0"></p>
                 <p id="total" style="margin: 0"></p>
@@ -57,8 +61,14 @@
                 <input type="radio" name="card" value="15" onclick="creditCard()">
                 <label for="15">American Express</label>
                 <br>
-                <input type="text" pattern="\d*" name="payment" id="visa" maxlength="16">
-                <input type="text" pattern="\d*" name="payment" id="amex" maxlength="15" disabled>
+                <input type="text" pattern="\d*" name="payment" id="visa-num" maxlength="16" placeholder="1234567890123456 (do not use dashes)" style="width: 40%">
+                <input type="text" pattern="\d*" name="payment" id="amex-num" maxlength="15" disabled placeholder="123456789012345 (do not use dashes)" style="width: 40%">
+                <input type="month" name="payment" id="expiry">
+                <br>
+                <input type="text" pattern="\d*" name="payment" id="visa-cvv" maxlength="3" placeholder="123" style="width: 40%; margin-top: 5px;">
+                <input type="text" pattern="\d*" name="payment" id="amex-cvv" maxlength="4" disabled placeholder="1234" style="width: 40%; margin-top: 5px;">
+                <br>
+                <input type="button" value="Confirm" style="margin-top: 5px;" onclick="redirect();">
               </form>
             </div>
           </div>
